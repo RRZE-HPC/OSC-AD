@@ -1,2 +1,2 @@
 # OSC-AD
-Artifacts for PMBS pape
+Artifacts for PMBS paper

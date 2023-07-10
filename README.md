@@ -1,2 +1,2 @@
 # OSC-AD
-Artifacts for PMBS paper
+Artifacts for "Physical Oscillator Model for Supercomputing"

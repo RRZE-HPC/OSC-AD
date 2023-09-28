@@ -104,8 +104,10 @@ experiments on two systems having significant differences in the numbers of core
 ```
     
 Key hardware specifications of systems are described below:
+<div style="width:60px ; height:60px">
 ![Hardware.png](Hardware.png "Hardware specifications")
-
+<div>
+   
 <a name="state"></a>
 
 - **B1.1.5 Run-time environment and state**:

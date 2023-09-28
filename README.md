@@ -56,7 +56,7 @@ behavior of scalable and bottlenecked parallel programs, respectively.
 
 <a name="Description"></a>
 ## B. Description
-We further provide an artifact description and an artifact evaluation appendix at [https://github.com/RRZE-HPC/OSC-AD](https://github.com/RRZE-HPC/OSC-AD). 
+We further provide an artifact description and an artifact evaluation appendix at [https://doi.org/10.5281/zenodo.8386950](https://doi.org/10.5281/zenodo.8386950). 
 To allow a third party to duplicate the findings, this article describes the MATLAB source code for the implementation of the Physical Oscillator Model (POM) and the additional information about software environments and experimental design and method used for the results shown in the paper, entitled "Physical Oscillator Model for Supercomputing".
 It further contains the videos of additional outcomes that, owing to page restrictions, cannot be included in this paper.
 
@@ -300,7 +300,7 @@ Bibtex:
 >   year={2023},  
 >   doi={10.1145/3624062.3625535}}
 
-* A. Afzal, G. Hager, and G. Wellein: Physical Oscillator Model for Supercomputing  -- Data Artifact Appendix. [DOI:](https://doi.org/)
+* A. Afzal, G. Hager, and G. Wellein: Physical Oscillator Model for Supercomputing  -- Data Artifact Appendix. [DOI:10.5281/zenodo.8386950](https://doi.org/10.5281/zenodo.8386950)
 
 Bibtex:  
 > @INPROCEEDINGS{POM2023,  
@@ -308,5 +308,5 @@ Bibtex:
 >   booktitle={[online]},   
 >   title={Physical Oscillator Model for Supercomputing -- Data Artifact Appendix},   
 >   year={2023},  
->   doi={}} 
+>   doi={10.5281/zenodo.8386950}} 
 

@@ -283,7 +283,7 @@ POM results for analogy with two MPI-parallel codes were considered for two syst
 [![Watch the video](videos/triad_30.mp4 "d=+-1")](triad_30.mp4)
 [![Watch the video](videos/triad_30_d3.mp4 "d=+-1, -2")](triad_30_d3.mp4)
 
-<iframe id="video" width="560" height="315" src="videos/triad_30.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+<iframe id="video" width="560" height="315" src="[videos/triad_30.mp4](https://docs.google.com/drawings/d/1ytbTzhhML29RrI71FuHm3k3I5UicmeQSH3xEdzfiT6w)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 
 <a name="Summary"></a>
 ## H. Summary

@@ -57,8 +57,8 @@ behavior of scalable and bottlenecked parallel programs, respectively.
 <a name="Description"></a>
 ## B. Description
 We further provide an artifact description and an artifact evaluation appendix at [https://doi.org/10.5281/zenodo.8386950](https://doi.org/10.5281/zenodo.8386950). 
-To allow a third party to duplicate the findings, this article describes the MATLAB source code for the implementation of the Physical Oscillator Model (POM) and the additional information about software environments and experimental design and method used for the results shown in the paper, entitled "Physical Oscillator Model for Supercomputing".
-It further contains the videos of additional outcomes that, owing to page restrictions, cannot be included in this paper.
+To allow a third party to duplicate the findings, this article describes the MATLAB source code for the implementation of the Physical Oscillator Model (POM) and the additional information about software environments and experimental design and method used for the results shown in the paper "Physical Oscillator Model for Supercomputing".
+It further contains videos and additional results that, owing to page restrictions, could not be included in this paper.
 
 <a name="Check-list"></a>
 ### B.1 Check-list (artifact meta information)
@@ -66,13 +66,13 @@ It further contains the videos of additional outcomes that, owing to page restri
 <a name="Programs"></a>
 
 - **B1.1.1 Algorithms and Programs**:
-We employed the MPI parallel programming model for three parallel benchmarks.
+We used three MPI-parallel benchmarks.
 ```
 1. MPI-parallel PISOLVER code -- mimics resource-scalable parallel programs -- calculates the value of pi using the midpoint rule with 500 M steps.
 2. MPI-parallel STREAM Triad -- mimic resource-bottlenecked parallel programs -- sweep A(:)=B(:)+s*C(:)) alternating with MPI pair-wise MPI_Irecv, MPI_Send and MPI_Wait routines.
-3. MPI-parallel slow Schönauer vector Triad --- sweep A(:)=B(:)+cos(C(:)/D(:)) alternating with MPI pair-wise MPI_Irecv, MPI_Send and MPI_Wait routines; The low-throughput cosine and floating-point division shifts the bandwidth saturation point to a higher number of cores.
+3. MPI-parallel slow Schönauer vector Triad --- sweep A(:)=B(:)+cos(C(:)/D(:)) alternating with MPI pair-wise MPI_Irecv, MPI_Send and MPI_Wait routines; the low-throughput cosine and floating-point division shifts the bandwidth saturation point to a higher number of cores.
 ```
-First program results in process scalability (no contention on memory interfaces, shared caches, or network interfaces), while the latter causes contention across processes.
+The first code is scalable (no contention on memory interfaces, shared caches, or network interfaces), while the other two show saturation effects on ccNUMA domains due to memory bandwidth contention.
 
 <a name="Compilation"></a>
 

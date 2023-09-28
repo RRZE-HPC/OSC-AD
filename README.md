@@ -306,7 +306,7 @@ Bibtex:
 > @INPROCEEDINGS{POM2023,  
 >   author={A. {Afzal} and G. {Hager} and G. {Wellein}},  
 >   booktitle={[online]},   
->   title={Physical Oscillator Model for Supercomputing -- Data Artifact Appendix},   
+>   title={Physical Oscillator Model for Supercomputing {--} Data Artifact Appendix},   
 >   year={2023},  
 >   doi={10.5281/zenodo.8386950}} 
 

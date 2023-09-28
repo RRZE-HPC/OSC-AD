@@ -70,7 +70,7 @@ We employed the MPI parallel programming model for three parallel benchmarks.
 ```
 1. MPI-parallel PISOLVER code -- mimics resource-scalable parallel programs -- calculates the value of pi using the midpoint rule with 500 M steps.
 2. MPI-parallel STREAM Triad -- mimic resource-bottlenecked parallel programs -- sweep A(:)=B(:)+s*C(:)) alternating with MPI pair-wise MPI_Irecv, MPI_Send and MPI_Wait routines.
-3. MPI-parallel slow Sch�nauer vector Triad --- sweep A(:)=B(:)+cos(C(:)/D(:)) alternating with MPI pair-wise MPI_Irecv, MPI_Send and MPI_Wait routines; The low-throughput cosine and floating-point division shifts the bandwidth saturation point to a higher number of cores.
+3. MPI-parallel slow Schönauer vector Triad --- sweep A(:)=B(:)+cos(C(:)/D(:)) alternating with MPI pair-wise MPI_Irecv, MPI_Send and MPI_Wait routines; The low-throughput cosine and floating-point division shifts the bandwidth saturation point to a higher number of cores.
 ```
 First program results in process scalability (no contention on memory interfaces, shared caches, or network interfaces), while the latter causes contention across processes.
 
@@ -161,6 +161,7 @@ The MATLAB model's implementation and Intel Trace Analyzer and Collector (ITAC) 
 * Intel Trace Analyzer and Collector, version 2021, update 6
 
 Key software specifications on both systems are described below:
+
 <img src="Software.png" style="width: 50%; height: auto;">
 
 
@@ -172,7 +173,7 @@ Key software specifications on both systems are described below:
     Data sharing across overlapping kernels was ruled out to eliminate the possibility of cache reuse.
      *  MPI-parallel McCalpin STREAM TRIAD, A(:)=B(:)+s*C(:):
         An overall working set of 48 GB (2 x 10^9 elements) on ClusterB and 1.2 GB (5 x 10^7 elements) on SuperMUC-NG is split evenly across the MPI processes, respectively.
-     * MPI-parallel slow Sch�nauer TRIAD, A(:)=B(:)+cos(C(:)/D(:)):
+     * MPI-parallel slow Schönauer TRIAD, A(:)=B(:)+cos(C(:)/D(:)):
         An overall working set of 1.6 GB (5 x 10^7 elements) on SuperMUC-NG is split evenly across the MPI processes.
 
     After each full loop traversal, each MPI rank `i` sends and receives data to and from each of its direct neighbors `i + 1` and `i - 1`. The process topology is an open-chain.
@@ -268,7 +269,7 @@ Two communication typologies are considered for each case:
 1. `d=+-1`, i.e., process `P_i` send and receive from `P_{i+1}` and `P_{i-1}` processes
 2. `d=+-1, -2`, i.e., process `P_i` receive from `P_{i+1}` and `P_{i-1}`, while send to `P_{i+1}`, `P_{i-1}` and `P_{i-2}`
    
-![topologies.png](topologies.png "Communication topologies")
+<img src="topologies.png" style="width: 70%; height: auto;">
 
 POM results for analogy with two MPI-parallel codes were considered for two systems; press the play button to watch the videos for 30 iterations runs. 
 
@@ -277,6 +278,8 @@ POM results for analogy with two MPI-parallel codes were considered for two syst
      *  MPI code: [https://docs.google.com/drawings/d/18EbRRCYU-U9CimlWYye8KP_PHVWdM0fbZe7lPKp_YLs](https://docs.google.com/drawings/d/18EbRRCYU-U9CimlWYye8KP_PHVWdM0fbZe7lPKp_YLs)
 [![Watch the video](videos/pi_30.mp4 "d=+-1")](pi_30.mp4)
 [![Watch the video](videos/pi_30_d3.mp4 "d=+-1, -2")](pi_30_d3.mp4)
+[![Video](https://github.com/RRZE-HPC/OSC-AD/blob/main/videos/pi_30_d3.mp4)](https://github.com/RRZE-HPC/OSC-AD/blob/main/videos/pi_30_d3.mp4)
+
  
 * MPI-parallel STREAM Triad on 4 ClusterB sockets
      *  POM: [https://docs.google.com/drawings/d/1U-C7aTMwkm5PUTqDf9ecIPL7idGeqj6X1xjVkVxxeDc](https://docs.google.com/drawings/d/1U-C7aTMwkm5PUTqDf9ecIPL7idGeqj6X1xjVkVxxeDc)

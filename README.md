@@ -269,24 +269,17 @@ Two communication typologies are considered for each case:
 1. `d=+-1`, i.e., process `P_i` send and receive from `P_{i+1}` and `P_{i-1}` processes
 2. `d=+-1, -2`, i.e., process `P_i` receive from `P_{i+1}` and `P_{i-1}`, while send to `P_{i+1}`, `P_{i-1}` and `P_{i-2}`
    
-<img src="topologies.png" style="width: 20%; height: auto;">
+<img src="topologies.png" style="width: 35%; height: auto;">
 
 POM results for analogy with two MPI-parallel codes were considered for two systems; press the play button to watch the videos for 30 iterations runs. 
 
 * MPI-parallel PISOLVER code on 2 SuperMUC-NG sockets
      *  POM: [https://docs.google.com/drawings/d/18rspIRpGvnWx7yZ1XUULge1WRc9aCfhGJSnt-K_kzlQ](https://docs.google.com/drawings/d/18rspIRpGvnWx7yZ1XUULge1WRc9aCfhGJSnt-K_kzlQ)
      *  MPI code: [https://docs.google.com/drawings/d/18EbRRCYU-U9CimlWYye8KP_PHVWdM0fbZe7lPKp_YLs](https://docs.google.com/drawings/d/18EbRRCYU-U9CimlWYye8KP_PHVWdM0fbZe7lPKp_YLs)
-[![Watch the video](videos/pi_30.mp4 "d=+-1")](pi_30.mp4)
-[![Watch the video](videos/pi_30_d3.mp4 "d=+-1, -2")](pi_30_d3.mp4)
-[![Video](https://drive.google.com/file/d/1Ar2Wup_2WsIlu-OCNwJ6vV5Pux0pIPvl/view?resourcekey)](https://drive.google.com/file/d/1Ar2Wup_2WsIlu-OCNwJ6vV5Pux0pIPvl/view?resourcekey)
-
  
 * MPI-parallel STREAM Triad on 4 ClusterB sockets
      *  POM: [https://docs.google.com/drawings/d/1U-C7aTMwkm5PUTqDf9ecIPL7idGeqj6X1xjVkVxxeDc](https://docs.google.com/drawings/d/1U-C7aTMwkm5PUTqDf9ecIPL7idGeqj6X1xjVkVxxeDc)
      *  MPI code: [https://docs.google.com/drawings/d/1ytbTzhhML29RrI71FuHm3k3I5UicmeQSH3xEdzfiT6w](https://docs.google.com/drawings/d/1ytbTzhhML29RrI71FuHm3k3I5UicmeQSH3xEdzfiT6w)
-[![Watch the video](videos/triad_30.mp4 "d=+-1")](triad_30.mp4)
-[![Watch the video](videos/triad_30_d3.mp4 "d=+-1, -2")](triad_30_d3.mp4)
-![video](videos/triad_30_d3.mp4)
 
 <a name="Summary"></a>
 ## H. Summary

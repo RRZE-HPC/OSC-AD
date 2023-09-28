@@ -298,5 +298,15 @@ Bibtex:
 >   booktitle={2023 IEEE/ACM Performance Modeling, Benchmarking and Simulation of High Performance Computer Systems (PMBS)},   
 >   title={Physical Oscillator Model for Supercomputing},   
 >   year={2023},  
->   doi={10.1145/3624062.3625535}} 
+>   doi={10.1145/3624062.3625535}}
+
+* A. Afzal, G. Hager, and G. Wellein: Physical Oscillator Model for Supercomputing  -- Data Artifact Appendix. [DOI:](https://doi.org/)
+
+Bibtex:  
+> @INPROCEEDINGS{POM2023,  
+>   author={A. {Afzal} and G. {Hager} and G. {Wellein}},  
+>   booktitle={[online]},   
+>   title={Physical Oscillator Model for Supercomputing -- Data Artifact Appendix},   
+>   year={2023},  
+>   doi={}} 
 

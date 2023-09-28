@@ -43,7 +43,7 @@ model, we employ a sparse topology matrix mapping the communication structure
 and thus the inter-process dependencies of the program onto the 
 oscillator model and propose two interaction potentials
 that are suitable for different scenarios in parallel computing: 
-\emph{resource-scalable} and \emph{resource-bottlenecked} 
+`resource-scalable` and `resource-bottlenecked` 
 applications. The former are not limited by a resource bottleneck such
 as memory bandwidth or network contention, while the latter are. 
 As opposed to the original Kuramoto model, which has a periodic
@@ -111,7 +111,7 @@ Key hardware specifications of systems are described below:
 <a name="state"></a>
 
 - **B1.1.5 Run-time environment and state**:
-A comprehensive state description of the system that was utilized to conduct the experiments depicted in the paper's figures can be found in [`Meggie_state.csv`](Meggie_state.csv).
+A comprehensive state description of the system that was utilized to conduct the experiments depicted in the paper's figures can be found in [`Meggie-state.csv`](Meggie-state.csv).
 This lists comprehensive hardware information on 
 
      - libraries and compilers along with their versions 
@@ -141,7 +141,7 @@ yes
 ### B.2. How software can be obtained (if available)
 To download the software's, check out the following websites: 
 
-* POM implementation: [https://tiny.cc/PMBS23-OSC-AD](https://tiny.cc/PMBS23-OSC-AD)
+* POM implementation: [https://github.com/RRZE-HPC/OSC-AD](https://github.com/RRZE-HPC/OSC-AD)
 * Intel C++ compiler: [https://software.intel.com/content/www/us/en/develop/tools/oneapi/components/dpc-compiler.html](https://software.intel.com/content/www/us/en/develop/tools/oneapi/components/dpc-compiler.html)
 * Intel MPI library: [https://intel.com/content/www/us/en/developer/tools/oneapi/mpi-library.html](https://intel.com/content/www/us/en/developer/tools/oneapi/mpi-library.html)
 * Intel Trace Analyzer and Collector: [https://software.intel.com/en-us/trace-analyzer](https://software.intel.com/en-us/trace-analyzer)
@@ -149,7 +149,7 @@ To download the software's, check out the following websites:
 
 <a name="HWD"></a>
 ### B.3. Hardware dependencies
-Experiments were conducted on SuperMUC-NG (Intel Xeon Skylake SP CPUs) at the power-capped clock-frequency of 2.3 GHz (fixed, turbo disabled), and on ClusterB (Intel Xeon Broadwell CPUs) at base clock-frequency of  2.2 GHz (fixed, turbo disabled).
+Experiments were conducted on `SuperMUC-NG (Intel Xeon Skylake SP CPUs)` at the power-capped clock-frequency of `2.3 GHz (fixed, turbo disabled)`, and on `Meggie (Intel Xeon Broadwell CPUs)` at base clock-frequency of  `2.2 GHz (fixed, turbo disabled)`.
 The reproducibility of experiments requires mapping consecutive MPI processes to consecutive cores and fixing the frequency and switching-off the turbo mode.
 
 <a name="SWD"></a>
@@ -169,10 +169,10 @@ Key software specifications on both systems are described below:
 ### B.5. Datasets
 
 1. Resource-scalable parallel programs: The MPI-parallel PISOLVER code comprises a large number of back-to-back double-precision divide instructions, whose throughput is exactly one instruction per 16 clock cycles on Broadwell.
-2. Resource-bottlenecked parallel programs: Working sets were chosen large enough to not fit into any cache, which is at least 10x the last-level cache size, i.e., L3 caches (non-inclusive victim L3+L2 caches) in the Broadwell (Skylake) processors of ClusterB (SuperMUC-NG).
+2. Resource-bottlenecked parallel programs: Working sets were chosen large enough to not fit into any cache, which is at least 10x the last-level cache size, i.e., L3 caches (non-inclusive victim L3+L2 caches) in the Broadwell (Skylake) processors of Meggie (SuperMUC-NG).
     Data sharing across overlapping kernels was ruled out to eliminate the possibility of cache reuse.
      *  MPI-parallel McCalpin STREAM TRIAD, A(:)=B(:)+s*C(:):
-        An overall working set of 48 GB (2 x 10^9 elements) on ClusterB and 1.2 GB (5 x 10^7 elements) on SuperMUC-NG is split evenly across the MPI processes, respectively.
+        An overall working set of 48 GB (2 x 10^9 elements) on Meggie and 1.2 GB (5 x 10^7 elements) on SuperMUC-NG is split evenly across the MPI processes, respectively.
      * MPI-parallel slow Schönauer TRIAD, A(:)=B(:)+cos(C(:)/D(:)):
         An overall working set of 1.6 GB (5 x 10^7 elements) on SuperMUC-NG is split evenly across the MPI processes.
 
@@ -195,7 +195,7 @@ Run the [kuramoto.m](kuramoto.m) script and generate results using the available
 <img src="POMviz.png" style="width: 50%; height: auto;">
 
 ## Defining communication typologies
-Communication typologies `T_{ij}` of MPI-parallel micro-benchmarks are described below.
+Communication typologies `topology(j,i)` of MPI-parallel micro-benchmarks are described below.
 
 ```matlab
 topology = zeros(n);
@@ -220,7 +220,7 @@ end
 ## E. Evaluation and expected result
 Run the MATLAB implementation according to the README file and compare the results in the paper. 
 Validation of our Physical Oscillator Model (POM) was done by applying comparison with experimental collected traces on two platforms.
-Navigate to the links of Google documents, mentioned in Section G of this article, to access the videos of stored measured results.
+Navigate to the links of Google documents, mentioned in [Section G](#Results) of this article, or to the [vidoes](vidoes) repository to access the videos of stored measured results.
 If executed on the same hardware as described, we anticipate that these figures will be within the bounds of those in the paper.
 
 <a name="Experiment"></a>
@@ -277,7 +277,7 @@ POM results for analogy with two MPI-parallel codes were considered for two syst
      *  POM: [https://docs.google.com/drawings/d/18rspIRpGvnWx7yZ1XUULge1WRc9aCfhGJSnt-K_kzlQ](https://docs.google.com/drawings/d/18rspIRpGvnWx7yZ1XUULge1WRc9aCfhGJSnt-K_kzlQ)
      *  MPI code: [https://docs.google.com/drawings/d/18EbRRCYU-U9CimlWYye8KP_PHVWdM0fbZe7lPKp_YLs](https://docs.google.com/drawings/d/18EbRRCYU-U9CimlWYye8KP_PHVWdM0fbZe7lPKp_YLs)
  
-* MPI-parallel STREAM Triad on 4 ClusterB sockets
+* MPI-parallel STREAM Triad on 4 Meggie sockets
      *  POM: [https://docs.google.com/drawings/d/1U-C7aTMwkm5PUTqDf9ecIPL7idGeqj6X1xjVkVxxeDc](https://docs.google.com/drawings/d/1U-C7aTMwkm5PUTqDf9ecIPL7idGeqj6X1xjVkVxxeDc)
      *  MPI code: [https://docs.google.com/drawings/d/1ytbTzhhML29RrI71FuHm3k3I5UicmeQSH3xEdzfiT6w](https://docs.google.com/drawings/d/1ytbTzhhML29RrI71FuHm3k3I5UicmeQSH3xEdzfiT6w)
 

@@ -162,7 +162,7 @@ The MATLAB model's implementation and Intel Trace Analyzer and Collector (ITAC) 
 
 Key software specifications on both systems are described below:
 
-<img src="Software.png" style="width: 50%; height: auto;">
+<img src="Software.png" style="width: 60%; height: auto;">
 
 
 <a name="Datasets"></a>
@@ -269,7 +269,7 @@ Two communication typologies are considered for each case:
 1. `d=+-1`, i.e., process `P_i` send and receive from `P_{i+1}` and `P_{i-1}` processes
 2. `d=+-1, -2`, i.e., process `P_i` receive from `P_{i+1}` and `P_{i-1}`, while send to `P_{i+1}`, `P_{i-1}` and `P_{i-2}`
    
-<img src="topologies.png" style="width: 70%; height: auto;">
+<img src="topologies.png" style="width: 20%; height: auto;">
 
 POM results for analogy with two MPI-parallel codes were considered for two systems; press the play button to watch the videos for 30 iterations runs. 
 
@@ -278,7 +278,7 @@ POM results for analogy with two MPI-parallel codes were considered for two syst
      *  MPI code: [https://docs.google.com/drawings/d/18EbRRCYU-U9CimlWYye8KP_PHVWdM0fbZe7lPKp_YLs](https://docs.google.com/drawings/d/18EbRRCYU-U9CimlWYye8KP_PHVWdM0fbZe7lPKp_YLs)
 [![Watch the video](videos/pi_30.mp4 "d=+-1")](pi_30.mp4)
 [![Watch the video](videos/pi_30_d3.mp4 "d=+-1, -2")](pi_30_d3.mp4)
-[![Video](https://github.com/RRZE-HPC/OSC-AD/blob/main/videos/pi_30_d3.mp4)](https://github.com/RRZE-HPC/OSC-AD/blob/main/videos/pi_30_d3.mp4)
+[![Video](https://drive.google.com/file/d/1Ar2Wup_2WsIlu-OCNwJ6vV5Pux0pIPvl/view?resourcekey)](https://drive.google.com/file/d/1Ar2Wup_2WsIlu-OCNwJ6vV5Pux0pIPvl/view?resourcekey)
 
  
 * MPI-parallel STREAM Triad on 4 ClusterB sockets

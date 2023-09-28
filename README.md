@@ -303,7 +303,7 @@ Bibtex:
 * A. Afzal, G. Hager, and G. Wellein: Physical Oscillator Model for Supercomputing  -- Data Artifact Appendix. [DOI:10.5281/zenodo.8386950](https://doi.org/10.5281/zenodo.8386950)
 
 Bibtex:  
-> @INPROCEEDINGS{POM2023,  
+> @INPROCEEDINGS{POMAD2023,  
 >   author={Afzal, Ayesha and Hager, Georg and Wellein, Gerhard},  
 >   booktitle={[online]},   
 >   title={Physical Oscillator Model for Supercomputing {--} Data Artifact Appendix},   

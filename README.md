@@ -282,8 +282,7 @@ POM results for analogy with two MPI-parallel codes were considered for two syst
      *  MPI code: [https://docs.google.com/drawings/d/1ytbTzhhML29RrI71FuHm3k3I5UicmeQSH3xEdzfiT6w](https://docs.google.com/drawings/d/1ytbTzhhML29RrI71FuHm3k3I5UicmeQSH3xEdzfiT6w)
 [![Watch the video](videos/triad_30.mp4 "d=+-1")](triad_30.mp4)
 [![Watch the video](videos/triad_30_d3.mp4 "d=+-1, -2")](triad_30_d3.mp4)
-
-<iframe id="video" width="560" height="315" src="[videos/triad_30.mp4](https://docs.google.com/drawings/d/1ytbTzhhML29RrI71FuHm3k3I5UicmeQSH3xEdzfiT6w)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+![Screenshot](videos/triad_30_d3.mp4)
 
 <a name="Summary"></a>
 ## H. Summary
@@ -291,4 +290,16 @@ Please see the Section 6 of the paper that presents the summary.
 
 <a name="Notes"></a>
 ## I. Notes
-None
+
+Please cite the work as:
+
+* A. Afzal, G. Hager, and G. Wellein: Physical Oscillator Model for Supercomputing. [DOI:10.1145/3624062.3625535](https://doi.org/10.1145/3624062.3625535)
+
+Bibtex:  
+> @INPROCEEDINGS{POM2023,  
+>   author={A. {Afzal} and G. {Hager} and G. {Wellein}},  
+>   booktitle={2023 IEEE/ACM Performance Modeling, Benchmarking and Simulation of High Performance Computer Systems (PMBS)},   
+>   title={Physical Oscillator Model for Supercomputing},   
+>   year={2023},  
+>   doi={10.1145/3624062.3625535}} 
+

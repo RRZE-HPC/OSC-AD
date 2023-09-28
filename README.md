@@ -161,7 +161,7 @@ The MATLAB model's implementation and Intel Trace Analyzer and Collector (ITAC) 
 * Intel Trace Analyzer and Collector, version 2021, update 6
 
 Key software specifications on both systems are described below:
-![Software.png](Software.png "Software specifications")
+<img src="Software.png" style="width: 50%; height: auto;">
 
 
 <a name="Datasets"></a>
@@ -191,7 +191,7 @@ git clone https://github.com/RRZE-HPC/OSC-AD && cd OSC-AD
 
 Run the [kuramoto.m](kuramoto.m) script and generate results using the available configuration options shown. Below is a sample output visualisation:
 
-<img src="POMviz.png" style="width: 90%; height: auto;">
+<img src="POMviz.png" style="width: 50%; height: auto;">
 
 ## Defining communication typologies
 Communication typologies `T_{ij}` of MPI-parallel micro-benchmarks are described below.

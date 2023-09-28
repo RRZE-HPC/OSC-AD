@@ -104,9 +104,9 @@ experiments on two systems having significant differences in the numbers of core
 ```
     
 Key hardware specifications of systems are described below:
-<div style="width:60px ; height:60px">
-![Hardware.png](Hardware.png "Hardware specifications")
-<div>
+
+
+<img src="Hardware.png" width="90%" height="90%">
    
 <a name="state"></a>
 
@@ -191,7 +191,7 @@ git clone https://github.com/RRZE-HPC/OSC-AD && cd OSC-AD
 
 Run the [kuramoto.m](kuramoto.m) script and generate results using the available configuration options shown. Below is a sample output visualisation:
 
-<img src="POMviz.png" width="50%" height="50%">
+<img src="POMviz.png" width="90%" height="90%">
 
 ## Defining communication typologies
 Communication typologies `T_{ij}` of MPI-parallel micro-benchmarks are described below.

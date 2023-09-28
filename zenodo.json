@@ -1,0 +1,34 @@
+{
+  "title": "Artifact Description/Artifact Evaluation/Computational Artifact for paper, entitled Physical Oscillator Model for Supercomputing",
+  "description": "We provide reproducibility initiative dependencies (Artifact Description or Artifact Evaluation or Computational Results Analysis) appendix. To allow a third party to duplicate the findings, this article describes the MATLAB source code for the implementation of the Physical Oscillator Model (POM) and the additional information about software environments and experimental design and method used for the results shown in the paper, entitled Physical Oscillator Model for Supercomputing. It further contains the videos of additional outcomes that, owing to page restrictions, cannot be included in this paper.",
+  "creators": [
+    {
+      "affiliation": "Erlangen National High Performance Computing Center (NHR@FAU), Friedrich-Alexander-Universität Erlangen-Nürnberg",
+      "name": "Ayesha Afzal",
+      "orcid": "0000-0001-5061-0438"
+    },
+    {
+      "affiliation": "Erlangen National High Performance Computing Center (NHR@FAU), Friedrich-Alexander-Universität Erlangen-Nürnberg",
+      "name": "Georg Hager",
+      "orcid": "0000-0002-8723-2781"
+    },
+    {
+      "affiliation": "Erlangen National High Performance Computing Center (NHR@FAU), Friedrich-Alexander-Universität Erlangen-Nürnberg",
+      "name": "Gerhard Wellein",
+      "orcid": "0000-0001-7371-3026"
+    }
+  ],
+  "upload_type": "dataset",
+  "license": "GPL-3.0",
+  "access_right": "open",
+  "keywords": [
+    "parallel-distributed-computing",
+    "coupled-oscillators-Kuramoto-model",
+    "scalability-and-bottleneck",
+    "synchronization-and-desynchronization"
+  ],
+  "notes": "This research was partly supported by the Competence Network for Scientific High-Performance Computing in Bavaria (KONWIHR) under project ``OMI4Papps.'' ",
+  "communities": [
+    {"identifier": "fau"}
+  ]
+}

@@ -1,0 +1,280 @@
+################################################################################
+# CPUset
+################################################################################
+Domain N:
+	0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19
+
+Domain S0:
+	0,1,2,3,4,5,6,7,8,9
+
+Domain S1:
+	10,11,12,13,14,15,16,17,18,19
+
+Domain D0:
+	0,1,2,3,4,5,6,7,8,9
+
+Domain D1:
+	10,11,12,13,14,15,16,17,18,19
+
+Domain C0:
+	0,1,2,3,4,5,6,7,8,9
+
+Domain C1:
+	10,11,12,13,14,15,16,17,18,19
+
+Domain M0:
+	0,1,2,3,4,5,6,7,8,9
+
+Domain M1:
+	10,11,12,13,14,15,16,17,18,19
+
+
+################################################################################
+# CGroups
+################################################################################
+Allowed CPUs: 0-19
+Allowed Memory controllers: 0-1
+
+################################################################################
+# Topology
+################################################################################
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz
+CPU type:	Intel Xeon Broadwell EN/EP/EX processor
+CPU stepping:	1
+********************************************************************************
+Hardware Thread Topology
+********************************************************************************
+Sockets:		2
+Cores per socket:	10
+Threads per core:	1
+--------------------------------------------------------------------------------
+HWThread        Thread        Core        Die        Socket        Available
+0               0             0           0          0             *                
+1               0             1           0          0             *                
+2               0             2           0          0             *                
+3               0             3           0          0             *                
+4               0             4           0          0             *                
+5               0             5           0          0             *                
+6               0             6           0          0             *                
+7               0             7           0          0             *                
+8               0             8           0          0             *                
+9               0             9           0          0             *                
+10              0             10          0          1             *                
+11              0             11          0          1             *                
+12              0             12          0          1             *                
+13              0             13          0          1             *                
+14              0             14          0          1             *                
+15              0             15          0          1             *                
+16              0             16          0          1             *                
+17              0             17          0          1             *                
+18              0             18          0          1             *                
+19              0             19          0          1             *                
+--------------------------------------------------------------------------------
+Socket 0:		( 0 1 2 3 4 5 6 7 8 9 )
+Socket 1:		( 10 11 12 13 14 15 16 17 18 19 )
+--------------------------------------------------------------------------------
+********************************************************************************
+Cache Topology
+********************************************************************************
+Level:			1
+Size:			32 kB
+Cache groups:		( 0 ) ( 1 ) ( 2 ) ( 3 ) ( 4 ) ( 5 ) ( 6 ) ( 7 ) ( 8 ) ( 9 ) ( 10 ) ( 11 ) ( 12 ) ( 13 ) ( 14 ) ( 15 ) ( 16 ) ( 17 ) ( 18 ) ( 19 )
+--------------------------------------------------------------------------------
+Level:			2
+Size:			256 kB
+Cache groups:		( 0 ) ( 1 ) ( 2 ) ( 3 ) ( 4 ) ( 5 ) ( 6 ) ( 7 ) ( 8 ) ( 9 ) ( 10 ) ( 11 ) ( 12 ) ( 13 ) ( 14 ) ( 15 ) ( 16 ) ( 17 ) ( 18 ) ( 19 )
+--------------------------------------------------------------------------------
+Level:			3
+Size:			25 MB
+Cache groups:		( 0 1 2 3 4 5 6 7 8 9 ) ( 10 11 12 13 14 15 16 17 18 19 )
+--------------------------------------------------------------------------------
+********************************************************************************
+NUMA Topology
+********************************************************************************
+NUMA domains:		2
+--------------------------------------------------------------------------------
+Domain:			0
+Processors:		( 0 1 2 3 4 5 6 7 8 9 )
+Distances:		10 21
+Free memory:		28931.5 MB
+Total memory:		32093.8 MB
+--------------------------------------------------------------------------------
+Domain:			1
+Processors:		( 10 11 12 13 14 15 16 17 18 19 )
+Distances:		21 10
+Free memory:		31707 MB
+Total memory:		32208.7 MB
+--------------------------------------------------------------------------------
+available: 2 nodes (0-1)
+node 0 cpus: 0 1 2 3 4 5 6 7 8 9
+node 0 size: 32093 MB
+node 0 free: 28931 MB
+node 1 cpus: 10 11 12 13 14 15 16 17 18 19
+node 1 size: 32208 MB
+node 1 free: 31721 MB
+node distances:
+node   0   1 
+  0:  10  21 
+  1:  21  10 
+
+################################################################################
+# Prefetchers
+################################################################################
+Feature               HWThread 0	HWThread 1	HWThread 2	HWThread 3	HWThread 4	HWThread 5	HWThread 6	HWThread 7	HWThread 8	HWThread 9	HWThread 10	HWThread 11	HWThread 12	HWThread 13	HWThread 14	HWThread 15	HWThread 16	HWThread 17	HWThread 18	HWThread 19	
+HW_PREFETCHER         on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	
+CL_PREFETCHER         on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	
+DCU_PREFETCHER        on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	
+IP_PREFETCHER         on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	
+FAST_STRINGS          on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	
+THERMAL_CONTROL       on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	
+PERF_MON              on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	
+FERR_MULTIPLEX        off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	
+BRANCH_TRACE_STORAGE  on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	
+XTPR_MESSAGE          off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	
+PEBS                  on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	
+SPEEDSTEP             on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	
+MONITOR               on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	
+SPEEDSTEP_LOCK        off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	
+CPUID_MAX_VAL         off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	
+XD_BIT                on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	
+DYN_ACCEL             off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	
+TURBO_MODE            on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	on	
+TM2                   off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	off	
+
+################################################################################
+# Performance energy bias
+################################################################################
+Performance energy bias: 15 (0=highest performance, 15 = lowest energy)
+
+################################################################################
+# NUMA balancing
+################################################################################
+Enabled: 1
+
+################################################################################
+# General memory info
+################################################################################
+MemTotal:       65845840 kB
+MemFree:        62110592 kB
+MemAvailable:   61800296 kB
+Buffers:               0 kB
+Cached:          2791448 kB
+SwapCached:            0 kB
+Active:            61568 kB
+Inactive:        3068952 kB
+Active(anon):      55036 kB
+Inactive(anon):  3049016 kB
+Active(file):       6532 kB
+Inactive(file):    19936 kB
+Unevictable:        3072 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:        342188 kB
+Mapped:            74384 kB
+Shmem:           2764980 kB
+KReclaimable:      68520 kB
+Slab:             301072 kB
+SReclaimable:      68520 kB
+SUnreclaim:       232552 kB
+KernelStack:        6080 kB
+PageTables:         7500 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    32922920 kB
+Committed_AS:    3454188 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      134492 kB
+VmallocChunk:          0 kB
+Percpu:            17184 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:     83968 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      443900 kB
+DirectMap2M:    35110912 kB
+DirectMap1G:    33554432 kB
+
+################################################################################
+# Transparent huge pages
+################################################################################
+Enabled: [always] madvise never
+Use zero page: 1
+
+################################################################################
+# Hardware power limits
+################################################################################
+RAPL domain package-1
+- Limit0 long_term MaxPower 85000000uW Limit 85000000uW TimeWindow 999424us
+- Limit1 short_term MaxPower 170000000uW Limit 102000000uW TimeWindow 7808us
+RAPL domain dram
+- Limit0 long_term MaxPower 24000000uW Limit 0uW TimeWindow 976us
+RAPL domain package-0
+- Limit0 long_term MaxPower 85000000uW Limit 85000000uW TimeWindow 999424us
+- Limit1 short_term MaxPower 170000000uW Limit 102000000uW TimeWindow 7808us
+RAPL domain dram
+- Limit0 long_term MaxPower 24000000uW Limit 0uW TimeWindow 976us
+
+################################################################################
+# Modules
+################################################################################
+Currently Loaded Modulefiles:
+ 1) intel/2022.1.0   2) intelmpi/2021.7.0   3) itac/2021.6.0   4) likwid/5.2.2  
+
+################################################################################
+# Compiler
+################################################################################
+icc (ICC) 2021.6.0 20220226
+Copyright (C) 1985-2022 Intel Corporation.  All rights reserved.
+
+
+################################################################################
+# MPI
+################################################################################
+Intel(R) MPI Library for Linux* OS, Version 2021.7 Build 20220909 (id: 6b6f6425df)
+Copyright 2003-2022, Intel Corporation.
+
+################################################################################
+# Operating System
+################################################################################
+AlmaLinux release 8.8 (Sapphire Caracal)
+Derived from Red Hat Enterprise Linux 8.8 (Source)
+AlmaLinux release 8.8 (Sapphire Caracal)
+NAME="AlmaLinux"
+VERSION="8.8 (Sapphire Caracal)"
+ID="almalinux"
+ID_LIKE="rhel centos fedora"
+VERSION_ID="8.8"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="AlmaLinux 8.8 (Sapphire Caracal)"
+ANSI_COLOR="0;34"
+LOGO="fedora-logo-icon"
+CPE_NAME="cpe:/o:almalinux:almalinux:8::baseos"
+HOME_URL="https://almalinux.org/"
+DOCUMENTATION_URL="https://wiki.almalinux.org/"
+BUG_REPORT_URL="https://bugs.almalinux.org/"
+
+ALMALINUX_MANTISBT_PROJECT="AlmaLinux-8"
+ALMALINUX_MANTISBT_PROJECT_VERSION="8.8"
+REDHAT_SUPPORT_PRODUCT="AlmaLinux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.8"
+AlmaLinux release 8.8 (Sapphire Caracal)
+AlmaLinux release 8.8 (Sapphire Caracal)
+cpe:/o:almalinux:almalinux:8::baseos
+
+################################################################################
+# Operating System Kernel
+################################################################################
+Linux 4.18.0-477.13.1.el8_8.x86_64 x86_64 x86_64 x86_64 GNU/Linux

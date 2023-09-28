@@ -190,7 +190,7 @@ git clone https://github.com/RRZE-HPC/OSC-AD && cd OSC-AD
 Run the [kuramoto.m](kuramoto.m) script and generate results using the available configuration options shown. Below is a sample output visualisation:
 
 ![POMviz.png](POMviz.png "Output vizulization")
-<img src="POMviz.png" width="0.1" height="0.1">
+<img src="POMviz.png" width="0.05" height="0.05">
 
 ## Defining communication typologies
 Communication typologies `T_{ij}` of MPI-parallel micro-benchmarks are described below.
@@ -282,7 +282,7 @@ POM results for analogy with two MPI-parallel codes were considered for two syst
      *  MPI code: [https://docs.google.com/drawings/d/1ytbTzhhML29RrI71FuHm3k3I5UicmeQSH3xEdzfiT6w](https://docs.google.com/drawings/d/1ytbTzhhML29RrI71FuHm3k3I5UicmeQSH3xEdzfiT6w)
 [![Watch the video](videos/triad_30.mp4 "d=+-1")](triad_30.mp4)
 [![Watch the video](videos/triad_30_d3.mp4 "d=+-1, -2")](triad_30_d3.mp4)
-![Screenshot](videos/triad_30_d3.mp4)
+![video](videos/triad_30_d3.mp4)
 
 <a name="Summary"></a>
 ## H. Summary

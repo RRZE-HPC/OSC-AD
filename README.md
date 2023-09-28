@@ -294,7 +294,7 @@ Please cite the work as:
 
 Bibtex:  
 > @INPROCEEDINGS{POM2023,  
->   author={A. {Afzal} and G. {Hager} and G. {Wellein}},  
+>   author={Afzal, Ayesha and Hager, Georg and Wellein, Gerhard},  
 >   booktitle={2023 IEEE/ACM Performance Modeling, Benchmarking and Simulation of High Performance Computer Systems (PMBS)},   
 >   title={Physical Oscillator Model for Supercomputing},   
 >   year={2023},  
@@ -304,7 +304,7 @@ Bibtex:
 
 Bibtex:  
 > @INPROCEEDINGS{POM2023,  
->   author={A. {Afzal} and G. {Hager} and G. {Wellein}},  
+>   author={Afzal, Ayesha and Hager, Georg and Wellein, Gerhard},  
 >   booktitle={[online]},   
 >   title={Physical Oscillator Model for Supercomputing {--} Data Artifact Appendix},   
 >   year={2023},  

@@ -77,7 +77,7 @@ The first code is scalable (no contention on memory interfaces, shared caches, o
 <a name="Compilation"></a>
 
 - **B1.1.2 Compilation**:
-The C++ programming language is employed by all three MPI-parallel benchmarks.
+The C++ programming language is employed by all three MPI-parallel benchmarks. See below for details on compiler and MPI versions. 
 ```     
 CXX: "mpiicpc"
 STD optimizations: "-O3"
@@ -96,8 +96,7 @@ x86
 <a name="Hardware"></a>
 
 - **B1.1.4 Hardware**  
-To ensure the broad applicability of our results, we conducted most
-experiments on two systems having significant differences in the numbers of cores per ccNUMA domains and memory bandwidth:
+To ensure the broad applicability of our results, we conducted most experiments on two systems having significant differences in the number of cores per ccNUMA domain and memory bandwidth per socket:
 ```
 1. Meggie: 10 core Intel Xeon Broadwell E5-2630 v4 CPUs and fat-tree 100 Gbit/s Omni-Path 
 2. SuperMUC-NG: 24 core Intel Xeon Skylake SP Platinum 8174 CPUs and fat-tree 100 Gbit/s Omni-Path 
@@ -139,7 +138,7 @@ yes
 
 <a name="software"></a>
 ### B.2. How software can be obtained (if available)
-To download the software's, check out the following websites: 
+To download the software, check out the following websites: 
 
 * POM implementation: [https://github.com/RRZE-HPC/OSC-AD](https://github.com/RRZE-HPC/OSC-AD)
 * Intel C++ compiler: [https://software.intel.com/content/www/us/en/develop/tools/oneapi/components/dpc-compiler.html](https://software.intel.com/content/www/us/en/develop/tools/oneapi/components/dpc-compiler.html)
@@ -149,12 +148,12 @@ To download the software's, check out the following websites:
 
 <a name="HWD"></a>
 ### B.3. Hardware dependencies
-Experiments were conducted on `SuperMUC-NG (Intel Xeon Skylake SP CPUs)` at the power-capped clock-frequency of `2.3 GHz (fixed, turbo disabled)`, and on `Meggie (Intel Xeon Broadwell CPUs)` at base clock-frequency of  `2.2 GHz (fixed, turbo disabled)`.
-The reproducibility of experiments requires mapping consecutive MPI processes to consecutive cores and fixing the frequency and switching-off the turbo mode.
+Experiments were conducted on `SuperMUC-NG (Intel Xeon Skylake SP CPUs)` at a fixed clock frequency of `2.3 GHz (fixed, turbo disabled)`, and on `Meggie (Intel Xeon Broadwell CPUs)` at the base clock-frequency of  `2.2 GHz (fixed, turbo disabled)`.
+The reproducibility of experiments requires mapping consecutive MPI processes to consecutive cores and fixing the frequency (i.e., switching off the turbo mode).
 
 <a name="SWD"></a>
 ### B.4. Software dependencies
-The MATLAB model's implementation and Intel Trace Analyzer and Collector (ITAC) utilizes the following version updates. 
+The following versions of MATLAB and Intel Trace Analyzer and Collector (ITAC) were used. 
 
 * MATLAB model's implementation, version 2023, update 0
 * MATLAB tool, version 2022, update R2022a
@@ -194,8 +193,8 @@ Run the [kuramoto.m](kuramoto.m) script and generate results using the available
 
 <img src="POMviz.png" style="width: 50%; height: auto;">
 
-## Defining communication typologies
-Communication typologies `topology(j,i)` of MPI-parallel micro-benchmarks are described below.
+## Defining communication topologies
+Communication topologies `topology(j,i)` of MPI-parallel micro-benchmarks are described below.
 
 ```matlab
 topology = zeros(n);
@@ -220,8 +219,8 @@ end
 ## E. Evaluation and expected result
 Run the MATLAB implementation according to the README file and compare the results in the paper. 
 Validation of our Physical Oscillator Model (POM) was done by applying comparison with experimental collected traces on two platforms.
-Navigate to the links of Google documents, mentioned in [Section G](#Results) of this article, or to the [vidoes](vidoes) repository to access the videos of stored measured results.
-If executed on the same hardware as described, we anticipate that these figures will be within the bounds of those in the paper.
+Navigate to the links of Google documents, mentioned in [Section G](#Results) of this article, or to the [videos](videos) repository to access the videos of stored measured results.
+If executed on the same hardware as described, we anticipate that these figures will be close to those in the paper.
 
 <a name="Experiment"></a>
 ## F. Experiment customization
@@ -259,19 +258,19 @@ See Listings below for both.
     ```
 
 ## Impact of `sigma` for resource-bottlenecked programs
-The following figure shows the effect of `sigma` (from `Equation 4 of paper`) for the resource-bottlenecked programs.
+The following figure shows the effect of `sigma` (from `Equation 4 of paper`) on the resource-bottlenecked programs.
 
 ![sigma.png](sigma.png "Impact of sigma")
 
 ## Videos: MPI programs analogy with POM
-Two communication typologies are considered for each case: 
+Two communication topologies are considered for each case: 
 
 1. `d=+-1`, i.e., process `P_i` send and receive from `P_{i+1}` and `P_{i-1}` processes
 2. `d=+-1, -2`, i.e., process `P_i` receive from `P_{i+1}` and `P_{i-1}`, while send to `P_{i+1}`, `P_{i-1}` and `P_{i-2}`
    
 <img src="topologies.png" style="width: 35%; height: auto;">
 
-POM results for analogy with two MPI-parallel codes were considered for two systems; press the play button to watch the videos for 30 iterations runs. 
+POM results for analogy with two MPI-parallel codes were considered for two systems; press the play button to watch the videos showing 30 iterations. 
 
 * MPI-parallel PISOLVER code on 2 SuperMUC-NG sockets
      *  POM: [https://docs.google.com/drawings/d/18rspIRpGvnWx7yZ1XUULge1WRc9aCfhGJSnt-K_kzlQ](https://docs.google.com/drawings/d/18rspIRpGvnWx7yZ1XUULge1WRc9aCfhGJSnt-K_kzlQ)
@@ -283,7 +282,7 @@ POM results for analogy with two MPI-parallel codes were considered for two syst
 
 <a name="Summary"></a>
 ## H. Summary
-Please see the Section 6 of the paper that presents the summary.
+Please see the Section 6 of the paper for a summary.
 
 <a name="Notes"></a>
 ## I. Notes

@@ -69,7 +69,7 @@ It further contains videos and additional results that, owing to page restrictio
 We used three MPI-parallel benchmarks.
 ```
 1. MPI-parallel PISOLVER code -- mimics resource-scalable parallel programs -- calculates the value of pi using the midpoint rule with 500 M steps.
-2. MPI-parallel STREAM Triad -- mimic resource-bottlenecked parallel programs -- sweep A(:)=B(:)+s*C(:)) alternating with MPI pair-wise MPI_Irecv, MPI_Send and MPI_Wait routines.
+2. MPI-parallel STREAM Triad -- mimic resource-bottlenecked parallel programs -- sweep A(:)=B(:)+s*C(:) alternating with MPI pair-wise MPI_Irecv, MPI_Send and MPI_Wait routines.
 3. MPI-parallel slow Schönauer vector Triad -- mimic resource-bottlenecked parallel programs --- sweep A(:)=B(:)+cos(C(:)/D(:)) alternating with MPI pair-wise MPI_Irecv, MPI_Send and MPI_Wait routines; the low-throughput cosine and floating-point division shifts the bandwidth saturation point to a higher number of cores.
 ```
 The first code is scalable (no contention on memory interfaces, shared caches, or network interfaces), while the other two show saturation effects on ccNUMA domains due to memory bandwidth contention.
